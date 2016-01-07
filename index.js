@@ -9,4 +9,5 @@ xray('https://news.ycombinator.com/', '.athing',
         link: 'td:nth-child(3) a@href'
     }])
     .paginate('a[rel="nofollow"]:last-child@href')
+    .limit(3)
     .write('results.json');
