@@ -1,0 +1,22 @@
+{
+  "name": "scraper",
+  "version": "1.0.0",
+  "description": "Web scraper using XRay and Node.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devacto/scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devacto/scraper/issues"
+  },
+  "homepage": "https://github.com/devacto/scraper#readme",
+  "dependencies": {
+    "x-ray": "^2.0.3"
+  }
+}
