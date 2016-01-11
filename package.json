@@ -4,7 +4,7 @@
   "description": "Web scraper using XRay and Node.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/devacto/scraper#readme",
   "dependencies": {
+    "body-parser": "^1.14.2",
+    "express": "^4.13.3",
+    "mongodb": "^2.1.3",
+    "mongoose": "^4.3.5",
     "x-ray": "^2.0.3"
   }
 }

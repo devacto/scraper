@@ -1,13 +1,14 @@
-var Xray = require("x-ray");
+var express = require('express');
+var app = express();
 
-var xray = new Xray();
+// Reqs
+// app/food should return all food in the database
 
-xray('https://news.ycombinator.com/', '.athing',
-    [{
-        rank: '.rank',
-        title: 'td:nth-child(3) a',
-        link: 'td:nth-child(3) a@href'
-    }])
-    .paginate('a[rel="nofollow"]:last-child@href')
-    .limit(3)
-    .write('results.json');
+
+app.get('/food', function(req, res) {
+    res.send('Hello world');
+});
+
+var server = app.listen(3000, function() {
+   console.log('Server running at http://localhost:' + server.address.port);
+});
