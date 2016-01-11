@@ -1,12 +1,16 @@
 var express = require('express');
 var app = express();
 
-// Reqs
-// app/food should return all food in the database
+var Food = require('./db').Food;
 
+app.get('/food', function (req, res) {
+    Food.find({}, function(err, foods) {
+        res.send(foods);
+    })
+});
 
-app.get('/food', function(req, res) {
-    res.send('Hello world');
+app.get('/', function(req, res) {
+    res.send('Welcome to the food database!');
 });
 
 var server = app.listen(3000, function() {

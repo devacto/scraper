@@ -17,7 +17,7 @@ var nutritionSchema = new mongoose.Schema({
 var foodSchema = new mongoose.Schema({
     food_name: 'string',
     food_company: 'string',
-    nutrition: [nutritionSchema]
+    nutritions: [nutritionSchema]
 });
 
 exports.Food = mongoose.model('Food', foodSchema);
